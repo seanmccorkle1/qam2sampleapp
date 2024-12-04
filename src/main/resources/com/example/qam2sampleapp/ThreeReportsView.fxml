@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import javafx.scene.control.ComboBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TableColumn?>-->
+<!--<?import javafx.scene.control.TableView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<?import javafx.scene.control.ComboBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TableColumn?>-->
+<!--<?import javafx.scene.control.TableView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"-->
+<!--            minWidth="-Infinity" prefHeight="550.0" prefWidth="790.0"-->
+<!--            xmlns="http://javafx.com/javafx/17.0.6"-->
+<!--            xmlns:fx="http://javafx.com/fxml/1"-->
+<!--            fx:controller="com.example.qam2sampleapp.ThreeReportsViewController">-->
+<!--    <children>-->
+<!--        <Label layoutX="10.4" layoutY="2.2" text="Upcoming meetings" AnchorPane.leftAnchor="10.4" AnchorPane.topAnchor="2.2">-->
+<!--        </Label>-->
+<!--        <ComboBox fx:id="contact_dropdown" layoutX="11.2" layoutY="26.6" onAction="#show_appointments_for_a_contact" prefWidth="155.0" promptText="Pick a person" style="-fx-background-color:pink;" AnchorPane.leftAnchor="11.2" AnchorPane.topAnchor="26.6" />-->
+<!--        <TableView fx:id="main_table" layoutX="14.4" layoutY="59.2" prefHeight="211.0" prefWidth="484.0" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="252.0" AnchorPane.topAnchor="59.0">-->
+<!--            <columns>-->
+<!--                <TableColumn fx:id="id_col" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" text="ID" resizable="false" /> &lt;!&ndash; resizable="false"&ndash;&gt;-->
+<!--                <TableColumn fx:id="title_col" prefWidth="85.0" text="Title" />-->
+<!--                <TableColumn fx:id="type_col" prefWidth="66.4000015258789" text="Type" />-->
+<!--                <TableColumn fx:id="desc_col" prefWidth="114.39999389648438" text="Purpose" />-->
+<!--                <TableColumn fx:id="start_date_col" prefWidth="67.20001220703125" text="Start time" />-->
+<!--                <TableColumn fx:id="end_date_col" prefWidth="62.4000244140625" text="End time" />-->
+<!--                <TableColumn fx:id="contact_id_col" maxWidth="110.0" minWidth="47.199951171875" prefWidth="56.800048828125" text="Cust. ID" resizable="false" />  &lt;!&ndash;resizable="false"&ndash;&gt;-->
+<!--            </columns>-->
+<!--            <columnResizePolicy>-->
+<!--                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+<!--            </columnResizePolicy>-->
+<!--        </TableView>-->
+<!--        <Label layoutX="13.4" layoutY="324.8" text="By month" AnchorPane.leftAnchor="13.4" AnchorPane.topAnchor="324.8">-->
+<!--            <font>-->
+<!--                <Font name="Calibri" size="17.0" />-->
+<!--            </font>-->
+<!--        </Label>-->
+<!--        <TableView fx:id="by_date_table" layoutX="8.8" layoutY="351.2" prefHeight="184.0" prefWidth="239.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="502.0" AnchorPane.topAnchor="351.0">-->
+<!--            <columns>-->
+<!--                <TableColumn fx:id="month_col" prefWidth="80.0" text="Month" />-->
+<!--                <TableColumn fx:id="appmt_type_column" prefWidth="54.399993896484375" text="Name" />-->
+<!--                <TableColumn fx:id="by_month_total" maxWidth="92.79998779296875" minWidth="65.5999755859375" prefWidth="92.79998779296875"-->
+<!--                             text="Total appmts." resizable="false" /> &lt;!&ndash; resizable="false"&ndash;&gt;-->
+<!--            </columns>-->
+<!--            <columnResizePolicy>-->
+<!--                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+<!--            </columnResizePolicy>-->
+<!--        </TableView>-->
+<!--        <Label layoutX="375.0" layoutY="322.0" prefHeight="26.0" prefWidth="80.0" text="By year">-->
+<!--            <font>-->
+<!--                <Font name="Calibri" size="17.0" />-->
+<!--            </font>-->
+<!--        </Label>-->
+<!--        <TableView fx:id="by_type_table" layoutX="375.0" layoutY="351.0" prefHeight="184.0" prefWidth="258.0">-->
+<!--            <columns>-->
+<!--                <TableColumn fx:id="contact_year_col" prefWidth="85.0" text="Year" />-->
+<!--                <TableColumn fx:id="contact_name_col" prefWidth="89.60003662109375" text="Name" />-->
+<!--                <TableColumn fx:id="by_year_total" maxWidth="105.60003662109375" minWidth="81.0" prefWidth="83.99993896484375" text="Total appmts." />-->
+<!--            </columns>-->
+<!--            <columnResizePolicy>-->
+<!--                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+<!--            </columnResizePolicy>-->
+<!--        </TableView>-->
+<!--    </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qam2sampleapp.ThreeReportsViewController">
+    <children>
+        <Label layoutX="10.4" layoutY="2.2" text="Upcoming meetings" AnchorPane.leftAnchor="10.4" AnchorPane.topAnchor="2.2">
+            <font><Font name="Calibri" size="18.0" /></font>
+        </Label>
+        <ComboBox fx:id="contact_dropdown" layoutX="11.2" layoutY="26.6" onAction="#show_appointments_for_a_contact" prefWidth="155.0" promptText="Pick a person" style="-fx-background-color:pink;" AnchorPane.leftAnchor="11.2" AnchorPane.topAnchor="26.6" />
+        <TableView fx:id="main_table" layoutX="14.4" layoutY="59.2" prefHeight="211.0" prefWidth="484.0" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="252.0" AnchorPane.topAnchor="59.0">
+            <columns>
+                <TableColumn fx:id="id_col" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" text="ID" /> <!-- resizable="false"-->
+                <TableColumn fx:id="title_col" prefWidth="85.0" text="Title" />
+                <TableColumn fx:id="type_col" prefWidth="66.4000015258789" text="Type" />
+                <TableColumn fx:id="desc_col" prefWidth="114.39999389648438" text="Purpose" />
+                <TableColumn fx:id="start_date_col" prefWidth="67.20001220703125" text="Start time" />
+                <TableColumn fx:id="end_date_col" prefWidth="62.4000244140625" text="End time" />
+                <TableColumn fx:id="customer_id_col" maxWidth="110.0" minWidth="47.199951171875" prefWidth="56.800048828125" text="Cust. ID" />  <!--resizable="false"-->
+            </columns>
+            <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Label layoutX="6.4" layoutY="324.8" text="By month" AnchorPane.leftAnchor="6.4" AnchorPane.topAnchor="324.8">
+            <font>
+                <Font name="Calibri" size="17.0" />
+            </font>
+        </Label>
+        <TableView fx:id="first_table" layoutX="3.0" layoutY="351.0" prefHeight="184.0" prefWidth="239.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="508.0" AnchorPane.topAnchor="351.0">
+            <columns>
+                <TableColumn fx:id="month_col" prefWidth="80.0" text="Month" />
+                <TableColumn fx:id="appmt_type_column" prefWidth="54.399993896484375" text="Name" />
+                <TableColumn fx:id="by_month_total" maxWidth="92.79998779296875" minWidth="65.5999755859375" prefWidth="92.79998779296875" text="Total" /> <!-- resizable="false"-->
+            </columns>
+            <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <Label layoutX="547.0" layoutY="322.0" prefHeight="26.0" prefWidth="80.0" text="By year">
+            <font>
+                <Font name="Calibri" size="17.0" />
+            </font>
+        </Label>
+        <TableView fx:id="second_table" layoutX="545.0" layoutY="351.0" prefHeight="184.0" prefWidth="246.0">
+            <columns>
+                <TableColumn fx:id="contact_year_col" prefWidth="85.0" text="Year" />
+                <TableColumn fx:id="contact_name_col" prefWidth="89.60003662109375" text="Name" />
+                <TableColumn fx:id="by_year_total" maxWidth="105.60003662109375" minWidth="81.0" prefWidth="83.99993896484375" text="Total" />
+            </columns>
+            <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+      <TableView fx:id="div_table" layoutX="288.0" layoutY="349.0" prefHeight="184.0" prefWidth="246.0">
+          <columns>
+              <TableColumn fx:id="div_col" prefWidth="100.0" text="State" />
+              <TableColumn fx:id="name_col" prefWidth="110.0" text="Name" />
+              <TableColumn fx:id="by_div_total" prefWidth="35.0" text="Total" />
+          </columns>
+      </TableView>
+    </children>
+</AnchorPane>

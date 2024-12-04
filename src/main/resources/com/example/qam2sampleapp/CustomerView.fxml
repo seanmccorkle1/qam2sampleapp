@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.ButtonBar?>-->
+<!--<?import javafx.scene.control.ComboBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<?import javafx.scene.text.Text?>-->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0"
+            prefWidth="348.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.qam2sampleapp.CustomerViewController">
+    <padding>
+        <Insets bottom="8.5" left="8.5" right="8.5" top="8.5" />
+    </padding>
+    <VBox layoutX="117.0" layoutY="137.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text fx:id="customer_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a customer" wrappingWidth="325.0">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </Text>
+        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+            <Label fx:id="customer_label" prefHeight="32.0" prefWidth="81.0" text="ID:" />
+            <TextField fx:id="customer_id" disable="true" editable="false" prefHeight="20.0" prefWidth="300.0" promptText="" />
+        </HBox>
+        <TextField fx:id="customer_name" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="117.0" promptText="Your name" />
+        <TextField fx:id="customer_address" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="239.0" promptText="Street Address" />
+        <HBox alignment="CENTER_LEFT" spacing="5.0">
+            <ComboBox fx:id="country_box" prefHeight="26.0" prefWidth="176.0" promptText="Country" style="-fx-background-color: pink;" />
+            <HBox prefHeight="25.0" prefWidth="149.0" spacing="2.0">
+                <ImageView fitHeight="20.0" fitWidth="30.0">
+                    <image>
+                        <Image url="@flags/us1024.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="30.0">
+                    <image>
+                        <Image url="@flags/uk512.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="33.0">
+                    <image>
+                        <Image url="@flags/canada.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </HBox>
+        <HBox prefHeight="25.0" prefWidth="200.0" spacing="10.0">
+            <ComboBox fx:id="first_level_division_box" prefHeight="26.0" prefWidth="156.0" promptText="State/province" />
+            <TextField fx:id="zip_code" prefHeight="26.0" prefWidth="98.0" promptText="Zip code" />
+        </HBox>
+        <TextField fx:id="phone_num" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="186.0" promptText="Phone #" />
+        <ButtonBar prefHeight="25.0" prefWidth="280.0">
+            <buttons>
+                <Button fx:id="submit_button" defaultButton="true" mnemonicParsing="false" onAction="#add_a_customer" text="Submit info" />
+                <Button fx:id="cancel_button" cancelButton="true" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+            </buttons>
+        </ButtonBar>
+    </VBox>
+</AnchorPane>
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.ButtonBar?>-->
+<!--<?import javafx.scene.control.ComboBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<?import javafx.scene.text.Text?>-->
+
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"-->
+<!--            minWidth="-Infinity" prefHeight="305.0" prefWidth="348.0"-->
+<!--            xmlns="http://javafx.com/javafx/17.0.6"-->
+<!--            xmlns:fx="http://javafx.com/fxml/1"-->
+<!--            fx:controller="com.example.qam2sampleapp.CustomerViewController">-->
+<!--    <padding>-->
+<!--        <Insets bottom="8.5" left="8.5" right="8.5" top="8.5" />-->
+<!--    </padding>-->
+<!--    <VBox layoutX="117.0" layoutY="137.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0"-->
+<!--          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"-->
+<!--          AnchorPane.topAnchor="0.0">-->
+<!--        <Text fx:id="customer_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a customer"-->
+<!--              wrappingWidth="325.0">-->
+<!--            <font>-->
+<!--                <Font name="Calibri" size="18.0" />-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">-->
+<!--            <Label fx:id="customer_label" prefHeight="32.0" prefWidth="81.0" text="ID:" />-->
+<!--            <TextField fx:id="customer_id" disable="true" editable="false" prefHeight="20.0" prefWidth="300.0"-->
+<!--                       promptText="" />-->
+<!--        </HBox>-->
+<!--        <TextField fx:id="customer_name" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="117.0" promptText="Your name" />-->
+<!--        <TextField fx:id="customer_address" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="239.0" promptText="Street Address" />-->
+<!--        <HBox alignment="CENTER_LEFT" spacing="5.0">-->
+<!--            <ComboBox fx:id="country_box" prefHeight="26.0" prefWidth="176.0" promptText="Country"-->
+<!--                      style="-fx-background-color: pink;" />-->
+<!--            <HBox prefHeight="25.0" prefWidth="149.0" spacing="2.0">-->
+<!--                <ImageView fitHeight="20.0" fitWidth="30.0">-->
+<!--                    <image>-->
+<!--                        <Image url="@flags/us1024.png" />-->
+<!--                    </image>-->
+<!--                </ImageView>-->
+<!--                <ImageView fitHeight="20.0" fitWidth="30.0">-->
+<!--                    <image>-->
+<!--                        <Image url="@flags/uk512.png" />-->
+<!--                    </image>-->
+<!--                </ImageView>-->
+<!--                <ImageView fitHeight="20.0" fitWidth="33.0">-->
+<!--                    <image>-->
+<!--                        <Image url="@flags/canada.png" />-->
+<!--                    </image>-->
+<!--                </ImageView>-->
+<!--            </HBox>-->
+<!--        </HBox>-->
+<!--        <HBox prefHeight="25.0" prefWidth="200.0" spacing="10.0">-->
+<!--            <ComboBox fx:id="first_level_division_box" prefHeight="26.0" prefWidth="156.0"-->
+<!--                      promptText="State or province" />-->
+<!--            <TextField fx:id="zip_code" prefHeight="26.0" prefWidth="98.0" promptText="Zip code" />-->
+<!--        </HBox>-->
+<!--        <TextField fx:id="phone_num" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="186.0" promptText="Phone #" />-->
+<!--        <ButtonBar prefHeight="25.0" prefWidth="280.0">-->
+<!--            <buttons>-->
+<!--                <Button fx:id="submit_button" defaultButton="true" mnemonicParsing="false"-->
+<!--                        onAction="#add_a_customer" text="Submit" />-->
+<!--                <Button fx:id="cancel_button" cancelButton="true" mnemonicParsing="false"-->
+<!--                        onAction="#cancel" text="Exit" />-->
+<!--            </buttons>-->
+<!--        </ButtonBar>-->
+<!--    </VBox>-->
+<!--</AnchorPane>-->
